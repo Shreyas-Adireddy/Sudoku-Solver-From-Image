@@ -70,7 +70,7 @@ if __name__ == '__main__':
     from keras.models import load_model
     from solver import solve
 
-    boardImg = cv2.imread("sudoku2.jpg")
+    boardImg = cv2.imread("sudoku1.jpg")
     boardCropped, boardCords = find_sudoku(boardImg)
     cv2.imwrite("board.jpg", boardCropped)
     boxes = find_boxes(cv2.cvtColor(boardCropped, cv2.COLOR_BGR2GRAY))
